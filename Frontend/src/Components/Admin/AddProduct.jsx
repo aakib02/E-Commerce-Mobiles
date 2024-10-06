@@ -13,7 +13,7 @@ const handleSubmit=(e)=>{
     setAddProduct({Pname:'',Pprice:'', Pdesc:''})
  e.preventDefault()
  const formdata = {AddProduct}
- axios.post('http://localhost:5000/api/addProduct',formdata).then((data)=>{
+ axios.post('http://localhost:5001/api/addProduct',formdata).then((data)=>{
   if (data.data.message === 'product added successfully') {
     toast.success(data.data.message)
   }

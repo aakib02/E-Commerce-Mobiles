@@ -44,7 +44,7 @@ export default function Login() {
     const email = data.get('email')
     const password = data.get('password')
     const formdata = {email,password}
-    axios.post('http://localhost:5000/api/login',formdata).then((data)=>{
+    axios.post('http://localhost:5001/api/login',formdata).then((data)=>{
         setData(data.data);
     })
 if (Data.message === "login successfully") {

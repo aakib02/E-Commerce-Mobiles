@@ -5,10 +5,10 @@ import axios from 'axios'
 const ShowProduct = () => {
     const [product, setproduct] = useState([])
     useEffect(()=>{
-        axios.get('http://localhost:5000/api/showproduct').then((data)=>{
+        axios.get('http://localhost:5001/api/showproduct').then((data)=>{
             setproduct(data.data.data);
         })
-    },[])
+    },[product])
   return (
 <div className='  w-11/12 flex justify-center mx-auto mt-4'>
 <div className='w-full mt-4 px-3'>

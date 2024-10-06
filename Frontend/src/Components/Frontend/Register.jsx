@@ -40,7 +40,7 @@ export default function Register() {
     const email = data.get('email')
     const password = data.get('password')
     const formdata = {firstName,lastName,email,password}
-    axios.post('http://localhost:5000/api/register',formdata)
+    axios.post('http://localhost:5001/api/register',formdata)
   };
 
   return (
